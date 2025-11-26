@@ -168,30 +168,47 @@ Zrealizować przetwornik cyfrowo-analogowy (C/A) wykorzystując moduł laborator
 \end{figure}
 
 Procedura pomiarowa polegała na podłączeniu multimetru cyfrowego do wyjścia analogowego układu ($V_o$). Następnie na wejścia cyfrowe ($D_0$ - $D_3$, gdzie $D_3$ to MSB) podawano sekwencyjnie 4-bitowe słowa kodowe, począwszy od wartości $0000_2$ ($0_{10}$), aż do $1111_2$ ($15_{10}$). Dla każdej kombinacji wejściowej zmierzono i zanotowano wartość napięcia wyjściowego, co pozwoliło na wyznaczenie charakterystyki przetwarzania układu.\\
-\begin{table}[!ht]
-    \centering
-    \caption{Tabela przejsciowa}
-    \begin{tabular}{|l|l|l|}
+\begin{longtable}{|l|l|l|}
+    \caption{Charakterystyka przetwarzania przetwornika C/A (pomiary)} \label{tab:pomiary_dac} \\
+    
+    % --- Nagłówek na pierwszej stronie ---
     \hline
-        Słowo\_dec & Słowo & V\_o [V] \\ \hline
-        0 & 0000 & 0 \\ \hline
-        1 & 0001 & -0,723 \\ \hline
-        2 & 0010 & -1,449 \\ \hline
-        3 & 0011 & -2,193 \\ \hline
-        4 & 0100 & -2,892 \\ \hline
-        5 & 0101 & -3,633 \\ \hline
-        6 & 0110 & -4,38 \\ \hline
-        7 & 0111 & -5,14 \\ \hline
-        8 & 1000 & -5,74 \\ \hline
-        9 & 1001 & -6,47 \\ \hline
-        10 & 1010 & -7,21 \\ \hline
-        11 & 1011 & -7,97 \\ \hline
-        12 & 1100 & -8,69 \\ \hline
-        13 & 1101 & -9,45 \\ \hline
-        14 & 1110 & -10,21 \\ \hline
-        15 & 1111 & -10,98 \\ \hline
-    \end{tabular}
-\end{table}
+    Słowo\_dec & Słowo & V\_o [V] \\ \hline
+    \endfirsthead
+    
+    % --- Nagłówek na kolejnych stronach (jeśli tabela pęknie) ---
+    \multicolumn{3}{c}%
+    {{\bfseries \tablename\ \thetable{} -- ciąg dalszy z poprzedniej strony}} \\
+    \hline
+    Słowo\_dec & Słowo & V\_o [V] \\ \hline
+    \endhead
+    
+    % --- Stopka na stronach przejściowych ---
+    \hline \multicolumn{3}{|r|}{{Ciąg dalszy na następnej stronie}} \\ \hline
+    \endfoot
+    
+    % --- Stopka końcowa ---
+    \hline
+    \endlastfoot
+
+    % --- DANE ---
+    0 & 0000 & 0 \\ \hline
+    1 & 0001 & -0,723 \\ \hline
+    2 & 0010 & -1,449 \\ \hline
+    3 & 0011 & -2,193 \\ \hline
+    4 & 0100 & -2,892 \\ \hline
+    5 & 0101 & -3,633 \\ \hline
+    6 & 0110 & -4,38 \\ \hline
+    7 & 0111 & -5,14 \\ \hline
+    8 & 1000 & -5,74 \\ \hline
+    9 & 1001 & -6,47 \\ \hline
+    10 & 1010 & -7,21 \\ \hline
+    11 & 1011 & -7,97 \\ \hline
+    12 & 1100 & -8,69 \\ \hline
+    13 & 1101 & -9,45 \\ \hline
+    14 & 1110 & -10,21 \\ \hline
+    15 & 1111 & -10,98 \\ \hline
+\end{longtable}
 
 \begin{figure}[h]
     \centering

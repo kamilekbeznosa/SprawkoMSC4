@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.6)  26 NOV 2025 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.6)  26 NOV 2025 17:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,34 +825,36 @@ File: obwod2.PNG Graphic file (type png)
 <use obwod2.PNG>
 Package pdftex.def Info: obwod2.PNG  used on input line 165.
 (pdftex.def)             Requested size: 345.0pt x 157.03154pt.
-<wykres2.PNG, id=30, 437.2335pt x 254.1495pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 2 on input line 211.
+
+[5 <./obwod2.PNG>]
+<wykres2.PNG, id=35, 437.2335pt x 254.1495pt>
 File: wykres2.PNG Graphic file (type png)
 <use wykres2.PNG>
-Package pdftex.def Info: wykres2.PNG  used on input line 198.
+Package pdftex.def Info: wykres2.PNG  used on input line 215.
 (pdftex.def)             Requested size: 345.0pt x 200.54323pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[5 <./obwod2.PNG>]
-<protokol.PNG, id=36, 377.61075pt x 493.845pt>
+[6 <./wykres2.PNG>]
+<protokol.PNG, id=40, 377.61075pt x 493.845pt>
 File: protokol.PNG Graphic file (type png)
 <use protokol.PNG>
-Package pdftex.def Info: protokol.PNG  used on input line 208.
+Package pdftex.def Info: protokol.PNG  used on input line 225.
 (pdftex.def)             Requested size: 276.00105pt x 360.97104pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[7 <./protokol.PNG>]
 
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
-
-[6]
-
-[7 <./wykres2.PNG>]
-
-[8 <./protokol.PNG>] (MSCKubajewskiMatusiewiczOrłowski.aux)
+(MSCKubajewskiMatusiewiczOrłowski.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
@@ -864,7 +866,7 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  26953 strings out of 469941
- 681348 string characters out of 5469431
+ 681316 string characters out of 5469431
  1237353 words of memory out of 5000000
  53345 multiletter control sequences out of 15000+600000
  631901 words of font info for 48 fonts, out of 8000000 for 9000
@@ -879,10 +881,10 @@ ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Kamil/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Kamil/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Kamil/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on MSCKubajewskiMatusiewiczOrłowski.pdf (8 pages, 1146055 bytes
+Output written on MSCKubajewskiMatusiewiczOrłowski.pdf (7 pages, 1146064 bytes
 ).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
+ 222 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

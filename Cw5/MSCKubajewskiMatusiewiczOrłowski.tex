@@ -1,0 +1,214 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{karnaugh-map}
+\usepackage[polish]{babel}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{array}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage{longtable}
+
+\begin{document}
+
+\begin{center}
+	% Używamy @{} aby usunąć zewnętrzne marginesy
+	% Używamy 'm' (z pakietu 'array') dla środkowania w pionie
+	
+	\begin{tabular}{@{}|m{0.65\textwidth}|m{0.3\textwidth}|@{}}
+		\hline
+		% --- PIERWSZY WIERSZ LOGICZNY (wg obrazka) ---
+		% Komórka 1,1 (Lewa-góra)
+		Wydział Informatyki Politechniki Białostockiej \newline
+		Przedmiot: Modułowe systemy cyfrowe
+		&
+		% Komórka 1,2 (Prawa-góra)
+		Data: 26.11.2025 \\ \hline
+		
+		% --- DRUGI WIERSZ LOGICZNY (wg obrazka) ---
+		% Komórka 2,1 (Lewa-środek)
+		Zajęcia nr 5 \newline
+		Temat: Przetworniki A/C i C/A \newline
+		
+		& % <-- Separator kolumn dla wiersza 2
+		
+		% Komórka 2,2 (Prawa-środek)
+		
+		\\
+		
+		% --- TRZECI WIERSZ LOGICZNY (wg obrazka) ---
+		% Komórka 3,1 (Lewa-dół)
+		Grupa: Lab 8 \newline
+		Imię i nazwisko: \newline
+		Kamil Kubajewski, Jakub Matusiewicz, Bartosz Orłowski
+		
+		& % <-- Separator kolumn dla wiersza 3
+		
+		% Komórka 3,2 (Prawa-dół)
+		Prowadzący: \newline
+		dr hab. inż. Sławomir Zieliński \\ \hline
+	\end{tabular}
+\end{center}
+\vspace*{-2em}
+\section{Cel ćwiczeń}
+Celem ćwiczenia jest zapoznanie sie z budową i zasadą działania przetworników analogowocyfrowych, cyfrowo-analogowych oraz układów kaskadowych.
+\vspace*{-1em}
+\section{Podstawa teoretyczna}
+
+
+
+\section{Przebieg ćwiczeń}
+
+\subsection{Zadanie 1}
+Zrealizować przetwornik \textbf{analogowo-cyfrowy (A/C)} wykorzystując moduł laboratoryjny \textbf{DB22}.\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{obwod1.PNG}
+    \caption{Obwód do zadania 1}
+    \label{fig:moj_obrazek}
+\end{figure}
+
+Zgodnie ze schematem blokowym modułu, układ składa się z komparatora, licznika 4-bitowego oraz przetwornika C/A w pętli sprzężenia zwrotnego. Procedura weryfikacji polegała na podaniu napięcia na wejście analogowe (\textbf{Analog Input}, $V_i$). Następnie wartość napięcia była stopniowo regulowana. Poprawność konwersji weryfikowano, obserwując stan diod LED podłączonych do wyjść cyfrowych przetwornika ($B_0$-$B_3$), które reprezentowały wynikową wartość binarną napięcia wejściowego.
+\begin{longtable}{|l|l|l|}
+    \caption{Tabela przejściowa} \label{tab:tabela_przejsciowa} \\
+    
+    % --- Definicja nagłówka na pierwszej stronie ---
+    \hline
+    V\_in [V] & Słowo\_dec & Słowo \\ \hline
+    \endfirsthead
+    
+    % --- Definicja nagłówka na kolejnych stronach ---
+    \multicolumn{3}{c}%
+    {{\bfseries \tablename\ \thetable{} -- ciąg dalszy z poprzedniej strony}} \\
+    \hline
+    V\_in [V] & Słowo\_dec & Słowo \\ \hline
+    \endhead
+    
+    % --- Definicja stopki na dole stron (oprócz ostatniej) ---
+    \hline \multicolumn{3}{|r|}{{Ciąg dalszy na następnej stronie}} \\ \hline
+    \endfoot
+    
+    % --- Definicja stopki na ostatniej stronie ---
+    \hline
+    \endlastfoot
+
+    % --- DANE ---
+    0 & 0 & 0000 \\ \hline
+    0,1 & 0 & 0000 \\ \hline
+    0,2 & 0 & 0000 \\ \hline
+    0,3 & 1 & 0001 \\ \hline
+    0,4 & 1 & 0001 \\ \hline
+    0,5 & 1 & 0001 \\ \hline
+    0,6 & 2 & 0010 \\ \hline
+    0,7 & 2 & 0010 \\ \hline
+    0,8 & 2 & 0010 \\ \hline
+    0,9 & 3 & 0011 \\ \hline
+    1 & 3 & 0011 \\ \hline
+    1,1 & 3 & 0011 \\ \hline
+    1,2 & 4 & 0100 \\ \hline
+    1,3 & 4 & 0100 \\ \hline
+    1,4 & 4 & 0100 \\ \hline
+    1,5 & 5 & 0101 \\ \hline
+    1,6 & 5 & 0101 \\ \hline
+    1,7 & 5 & 0101 \\ \hline
+    1,8 & 6 & 0110 \\ \hline
+    1,9 & 6 & 0110 \\ \hline
+    2 & 6 & 0110 \\ \hline
+    2,1 & 7 & 0111 \\ \hline
+    2,2 & 7 & 0111 \\ \hline
+    2,3 & 7 & 0111 \\ \hline
+    2,4 & 7 & 0111 \\ \hline
+    2,5 & 8 & 1000 \\ \hline
+    2,6 & 8 & 1000 \\ \hline
+    2,7 & 9 & 1001 \\ \hline
+    2,8 & 9 & 1001 \\ \hline
+    2,9 & 9 & 1001 \\ \hline
+    3 & 10 & 1010 \\ \hline
+    3,1 & 10 & 1010 \\ \hline
+    3,2 & 10 & 1010 \\ \hline
+    3,3 & 11 & 1011 \\ \hline
+    3,4 & 11 & 1011 \\ \hline
+    3,5 & 11 & 1011 \\ \hline
+    3,6 & 12 & 1100 \\ \hline
+    3,7 & 12 & 1100 \\ \hline
+    3,8 & 12 & 1100 \\ \hline
+    3,9 & 13 & 1101 \\ \hline
+    4 & 13 & 1101 \\ \hline
+    4,1 & 13 & 1101 \\ \hline
+    4,2 & 13 & 1101 \\ \hline
+    4,3 & 14 & 1110 \\ \hline
+    4,4 & 14 & 1110 \\ \hline
+    4,5 & 14 & 1110 \\ \hline
+    4,6 & 15 & 1111 \\ \hline
+    4,7 & 15 & 1111 \\ \hline
+    4,8 & 15 & 1111 \\ \hline
+\end{longtable}
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{wykres1.PNG}
+    \caption{Obwód do zadania 1}
+    \label{fig:moj_obrazek}
+\end{figure}
+
+\newpage
+\subsection{Zadanie 2}
+Zrealizować przetwornik cyfrowo-analogowy (C/A) wykorzystując moduł laboratoryjny DB16.\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{obwod2.PNG}
+    \caption{Obwód do zadania 2}
+    \label{fig:moj_obrazek}
+\end{figure}
+
+Procedura pomiarowa polegała na podłączeniu multimetru cyfrowego do wyjścia analogowego układu ($V_o$). Następnie na wejścia cyfrowe ($D_0$ - $D_3$, gdzie $D_3$ to MSB) podawano sekwencyjnie 4-bitowe słowa kodowe, począwszy od wartości $0000_2$ ($0_{10}$), aż do $1111_2$ ($15_{10}$). Dla każdej kombinacji wejściowej zmierzono i zanotowano wartość napięcia wyjściowego, co pozwoliło na wyznaczenie charakterystyki przetwarzania układu.\\
+\begin{table}[!ht]
+    \centering
+    \caption{Tabela przejsciowa}
+    \begin{tabular}{|l|l|l|}
+    \hline
+        Słowo\_dec & Słowo & V\_o [V] \\ \hline
+        0 & 0000 & 0 \\ \hline
+        1 & 0001 & -0,723 \\ \hline
+        2 & 0010 & -1,449 \\ \hline
+        3 & 0011 & -2,193 \\ \hline
+        4 & 0100 & -2,892 \\ \hline
+        5 & 0101 & -3,633 \\ \hline
+        6 & 0110 & -4,38 \\ \hline
+        7 & 0111 & -5,14 \\ \hline
+        8 & 1000 & -5,74 \\ \hline
+        9 & 1001 & -6,47 \\ \hline
+        10 & 1010 & -7,21 \\ \hline
+        11 & 1011 & -7,97 \\ \hline
+        12 & 1100 & -8,69 \\ \hline
+        13 & 1101 & -9,45 \\ \hline
+        14 & 1110 & -10,21 \\ \hline
+        15 & 1111 & -10,98 \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{wykres2.PNG}
+    \caption{Wykres do zadania 2}
+    \label{fig:moj_obrazek}
+\end{figure}
+
+
+\newpage
+\subsection{Protokół}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{protokol.PNG}
+    \caption{Protokół}
+    \label{fig:moj_obrazek}
+\end{figure}
+
+
+\end{document}

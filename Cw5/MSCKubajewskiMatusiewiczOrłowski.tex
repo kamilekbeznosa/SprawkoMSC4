@@ -61,7 +61,15 @@ Celem ćwiczenia jest zapoznanie sie z budową i zasadą działania przetwornik�
 \vspace*{-1em}
 \section{Podstawa teoretyczna}
 
-% Jak będziesz Bartek dawać podstawę teoretyczną to nie przejmuj się odnośnikami, Kuba później doda
+Na zajęciach zapoznaliśmy się z budową i zasadą działania przetworników analogowo-cyfrowych (A/C) oraz cyfrowo-analogowych (C/A). Układy te stanowią niezbędny element współczesnych systemów pomiarowych i sterujących, umożliwiając komunikację między światem rzeczywistym, w którym sygnały mają charakter analogowy, a systemami cyfrowymi operującymi na wartościach dyskretnych, na przykład komputerami.
+
+Przetwornik (A/C) jest to urządzenie, na którego wejście podajemy napięcie w określonym zakresie, a na wyjściu otrzymujemy liczbę dwójkową, która odpowiada wartości tego napięcia. Im więcej bitów ma liczba wyjściowa, tym dokładniejszy jest dany przetwornik A/C.
+
+Pierwszym etapem jest próbkowanie, które polega na pobieraniu chwilowych wartości napięcia wejściowego w określonych, równych odstępach czasu. 
+
+Drugim etapem przetwarzania A/C jest kwantowanie. Następuje kodowanie, czyli przypisanie cyfrowej wartości każdemu poziomowi. Celem jest uproszczenie sygnału do postaci cyfrowej. To, jak duża jest pula tych dostępnych do wyboru liczb, zależy od liczby bitów przetwornika ($N$) i wynosi dokładnie $2^N$.
+
+W drugiej części zajęć zapoznaliśmy się z procesem odwrotnym, czyli przetwarzaniem cyfrowo-analogowym (C/A). Polega on na zamianie słowa cyfrowego (kodu binarnego) na odpowiadającą mu wartość napięcia wyjściowego.
 
 \section{Przebieg ćwiczeń}
 
@@ -217,62 +225,12 @@ Procedura pomiarowa polegała na podłączeniu multimetru cyfrowego do wyjścia 
     \label{fig:moj_obrazek}
 \end{figure}
 
-\newpage
-\section{Dyskusja błędów}
-
-W przeprowadzonych zadaniach zrealizowano przetwornik analogowo-cyfrowy (A/C) wykorzystując moduł laboratoryjny DB22 oraz przetwornik cyfrowo-analogowy (C/A) wykorzystując moduł laboratoryjny DB16.\\
-
-W zadaniu pierwszym na wejście podawano napięcie od 0 V do 5 V za pomocą zasilacza laboratoryjnego oraz podłączono zestaw taktujący o częstotliwości 1 kHz. Stopniowo zwiększając napięcie wejściowe, obserwowano zmiany słowa wyjściowego na diodach LED.Zgodnie z podstawą teoretyczną, dominującym źródłem niedokładności był błąd kwantyzacji. Jest on nieunikniony w systemach cyfrowych, ponieważ ciągły sygnał napięciowy musi zostać odwzorowany na skończoną liczbę poziomów (w tym przypadku 16 dla 4 bitów). Na podstawie Tabeli 1 wyznaczono średnią wartość kwantu (LSB), która wynosi $q \approx 0,3 \text{ V}$.\\
-
-Istotę tego błędu obrazuje fakt, że przetwornik jest nieczuły na zmiany napięcia mniejsze od wartości kwantu. Jak wynika z danych pomiarowych, dla napięć 0,6 V, 0,7 V oraz 0,8 V układ zwraca tę samą wartość cyfrową ($0010_2$), mimo wzrostu napięcia wejściowego.Charakterystyka schodkowa widoczna na Rysunku 2 potwierdza monotoniczność przetwornika (wzrost napięcia nie powoduje spadku kodu). Oprócz błędu kwantyzacji, na wynik wpływ miały również błędy statyczne zastosowanych elementów (np. tolerancja rezystorów, błąd offsetu komparatora), niepewność nastaw zasilacza laboratoryjnego przy ręcznym zadawaniu napięcia lub szybkość przetwarzania sygnału.\\
-
-W zadaniu drugim przeanalizowano przetwornik C/A z drabiną rezystorową. Do wejścia podłączono +12V oraz -12V, a następnie za pomocą przełączników na wejściu ustawiając odpowiednie słowo badano napięcie na wyjściu. Zależność napięcia wyjściowego od słowa wejściowego jest wysoce liniowa, co widać na Rysunku 4. Na podstawie wykonanych pomiarów dopasowano liniową charakterystykę teoretyczną przetwornika. Otrzymano równanie:
-
-\[
-V_{\text{teo}}(k) = -0.7277 \cdot k + 0.0119
-\]
-
-co oznacza, że idealny krok napięciowy (LSB) wynosi około \(0.728\ \text{V}\). Następnie porównano wartości zmierzone z teoretycznymi dla każdego kodu wejściowego. Odchylenia były niewielkie i wynosiły od ok. 1\% do kilku procent, co jest zgodne z tolerancją rezystorów drabinki R–2R. Ponadto należy uwzględnić inne, typowe źródła błędów występujące w przetowrnikach (C/A), które mogły przyczynić się do obserwowanych rozbieżności. Należą do nich błąd pomiarowy multimetru, napięciowe odchyłki źródła zasilania ±12 V oraz spadki na przewodach i stykach przełączników; wpływ offsetu i ograniczeń dynamicznych układów wzmacniających lub buforujących oraz zakłócenia i szumy środowiskowe.
-
 \section{Wnioski}
+Po przeprowadzeniu ćwiczeń możemy potwierdzić teoretyczne zasady działania przetworników analogowo-cyfrowych i cyfrowo-analogowych. Pomiary potwierdziły, że przetworniki te stanowią kluczowy element łączący systemy analogowe z cyfrowymi.
 
-\section{Literatura}
-\renewcommand{\refname}{}
-\begin{thebibliography}{9}
-	
-	\bibitem{walt}
-	Walt Kester, \textit{The Data Conversion Handbook}, Analog Devices, dostęp online: \url{https://www.analog.com/en/resources/technical-books/data-conversion-handbook.html},
-	data dostępu: listopad 2025.
-	
-	\bibitem{ti}
-	\textit{Principles of Data Acquisition and Conversion}, Texas Instruments, dostęp online: \url{https://www.ti.com/lit/an/sbaa051a/sbaa051a.pdf},
-	data dostępu: listopad 2025.
-	
-	\bibitem{jitter}
-	\textit{Jitter effects on Analog to Digital and Digital to Analog Converters}, The Well Tempered Computer, dostęp online: \url{https://www.thewelltemperedcomputer.com/Lib/Troisi.pdf},
-	data dostępu: listopad 2025.
-	
-	\bibitem{coombs}
-	C. F. Coombs, \textit{Electronic Instruments Handbook Third Edition}, Pdfcoffee, dostęp online: \url{https://pdfcoffee.com/electronic-instrument-handbook-third-edition-2-pdf-free.html},
-	data dostępu: listopad 2025.
-	
-	\bibitem{wazniak} 
-	\textit{Układy elektroniczne i technika pomiarowa}, Uniwersytet Warszawski, Wydział Matematyki, Informatyki i Mechaniki, dostęp online: 
-	\url{https://wazniak.mimuw.edu.pl/index.php?title=Uk%C5%82ady_elektroniczne_i_technika_pomiarowa}, 
-	data dostępu: listopad 2025.
-	
-	\bibitem{wiki-adc}
-	\textit{Analog-to-digital converter}, Wikipedia, dostęp online:
-	\url{https://en.wikipedia.org/wiki/Analog-to-digital_converter},
-	data dostępu: listopad 2025.
-	
-	\bibitem{wiki-dac}
-	\textit{Digital-to-analog converter}, Wikipedia, dostęp online:
-	\url{https://en.wikipedia.org/wiki/Digital-to-analog_converter},
-	data dostępu: listopad 2025.
-	
-\end{thebibliography}
+Podczas korzystania z przetwornika A/C (moduł DB22) mogliśmy zauważyć charakterystyczną, schodkową zmianę wartości wyjściowej. Jest to dowód na działanie procesu kwantowania, gdzie ciągłe napięcie wejściowe jest przypisywane do skończonych wartości cyfrowych. Dla wykorzystanego układu 4-bitowego rozdzielczość pomiarowa wynosiła około $0,3\,V$. Oznacza to, że układ nie reagował na zmiany napięcia mniejsze niż ta wartość, co obrazuje błąd kwantowania.
 
+W drugiej części zajęć, korzystając z przetwornika C/A (moduł DB16), wyznaczyliśmy jego charakterystykę przejściową. Okazała się ona liniowa, co świadczyło o poprawnej pracy układu. Zauważyliśmy, że napięcia wyjściowe miały wartości ujemne, co wynikało z zastosowania w module wzmacniacza w konfiguracji odwracającej. Średnia zmiana napięcia przypadająca na jeden bit wynosiła około $-0,73\,V$.
 \newpage
 
 \section{Protokół}

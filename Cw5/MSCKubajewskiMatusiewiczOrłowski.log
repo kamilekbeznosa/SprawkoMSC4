@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.26)  30 NOV 2025 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.26)  7 DEC 2025 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -738,7 +738,10 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 )
 (MSCKubajewskiMatusiewiczOr≈Çowski.aux
 Package babel Info: 'polish' activates 'polish' shorthands.
-(babel)             Reported on input line 5.
+(babel)             Reported on input line 12.
+
+
+LaTeX Warning: Label `fig:moj_obrazek' multiply defined.
 
 
 LaTeX Warning: Label `fig:moj_obrazek' multiply defined.
@@ -817,145 +820,201 @@ Overfull \hbox (7.94893pt too wide) in paragraph at lines 24--57
  [] 
  []
 
-<obwod1.PNG, id=4, 602.85225pt x 363.15675pt>
-File: obwod1.PNG Graphic file (type png)
-<use obwod1.PNG>
-Package pdftex.def Info: obwod1.PNG  used on input line 72.
-(pdftex.def)             Requested size: 345.0pt x 207.82715pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
 
 
 [1
 
-{C:/Users/kubam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./obwod1.PNG
->] [2]
-
-[3]
-<wykres1.PNG, id=24, 582.37575pt x 325.215pt>
-File: wykres1.PNG Graphic file (type png)
-<use wykres1.PNG>
-Package pdftex.def Info: wykres1.PNG  used on input line 155.
-(pdftex.def)             Requested size: 345.0pt x 192.6642pt.
-
-
-[4 <./wykres1.PNG>]
-<obwod2.PNG, id=29, 611.28375pt x 278.2395pt>
-File: obwod2.PNG Graphic file (type png)
-<use obwod2.PNG>
-Package pdftex.def Info: obwod2.PNG  used on input line 165.
-(pdftex.def)             Requested size: 345.0pt x 157.03154pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+{C:/Users/kubam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
-[5 <./obwod2.PNG>]
-<wykres2.PNG, id=35, 437.2335pt x 254.1495pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+<obwod2.PNG, id=17, 611.28375pt x 278.2395pt>
+File: obwod2.PNG Graphic file (type png)
+<use obwod2.PNG>
+Package pdftex.def Info: obwod2.PNG  used on input line 102.
+(pdftex.def)             Requested size: 345.0pt x 157.03154pt.
+<obwod1.PNG, id=19, 602.85225pt x 363.15675pt>
+File: obwod1.PNG Graphic file (type png)
+<use obwod1.PNG>
+Package pdftex.def Info: obwod1.PNG  used on input line 115.
+(pdftex.def)             Requested size: 345.0pt x 207.82715pt.
+
+
+[3 <./obwod2.PNG>] [4 <./obwod1.PNG>]
+
+[5]
+<wykres1.PNG, id=34, 582.37575pt x 325.215pt>
+File: wykres1.PNG Graphic file (type png)
+<use wykres1.PNG>
+Package pdftex.def Info: wykres1.PNG  used on input line 198.
+(pdftex.def)             Requested size: 345.0pt x 192.6642pt.
+
+
+[6 <./wykres1.PNG>]
+File: obwod2.PNG Graphic file (type png)
+<use obwod2.PNG>
+Package pdftex.def Info: obwod2.PNG  used on input line 208.
+(pdftex.def)             Requested size: 345.0pt x 157.03154pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+[7]
+<wykres2.PNG, id=43, 437.2335pt x 254.1495pt>
 File: wykres2.PNG Graphic file (type png)
 <use wykres2.PNG>
-Package pdftex.def Info: wykres2.PNG  used on input line 215.
+Package pdftex.def Info: wykres2.PNG  used on input line 258.
 (pdftex.def)             Requested size: 345.0pt x 200.54323pt.
 
 
-[6 <./wykres2.PNG>]
-Overfull \hbox (2.86206pt too wide) in paragraph at lines 223--224
+[8 <./wykres2.PNG>]
+Overfull \hbox (2.86206pt too wide) in paragraph at lines 265--266
 []\T1/cmr/m/n/10 W prze-pro-wa-dzo-nych za-da-niach zre-ali-zo-wano prze-twor-n
 ik analogowo-cyfrowy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 244--246
+
+[9]
+Underfull \hbox (badness 2478) in paragraph at lines 291--293
 []\T1/cmr/m/n/10 Walt Ke-ster, \T1/cmr/m/it/10 The Data Co-nver-sion Hand-book\
 T1/cmr/m/n/10 , Ana-log De-vi-ces, do-
  []
 
 
-
-[7]
-Underfull \hbox (badness 2865) in paragraph at lines 252--254
+Underfull \hbox (badness 2865) in paragraph at lines 299--301
 []\T1/cmr/m/it/10 Jitter ef-fects on Ana-log to Di-gi-tal and Di-gi-tal to Ana-
 log Co-nver-
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 252--254
+Underfull \hbox (badness 4072) in paragraph at lines 299--301
 \T1/cmr/m/it/10 ters\T1/cmr/m/n/10 , The Well Tem-pe-red Com-pu-ter, do-st¶p on
 -line: $\T1/cmtt/m/n/10 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 []\T1/cmr/m/n/10 C. F. Co-ombs, \T1/cmr/m/it/10 Elec-tro-nic In-stru-ments Hand
 -book Third Edi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 \T1/cmr/m/it/10 tion\T1/cmr/m/n/10 , Pdf-cof-fee, do-st¶p on-line: $\T1/cmtt/m/
 n/10 https : / / pdfcoffee . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 \T1/cmtt/m/n/10 electronic-[]instrument-[]handbook-[]third-[]edition-[]2-[]pdf-
 []free . html$\T1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 7273) in paragraph at lines 260--263
+Underfull \hbox (badness 7273) in paragraph at lines 307--310
 []\T1/cmr/m/it/10 Uk™ady elek-tro-niczne i tech-nika po-mia-rowa\T1/cmr/m/n/10 
 , Uni-wer-sy-tet War-szaw-
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 260--263
+Underfull \hbox (badness 4328) in paragraph at lines 307--310
 \T1/cmr/m/n/10 ski, Wy-dzia™ Ma-te-ma-tyki, In-for-ma-tyki i Me-cha-niki, do-st
 ¶p on-line:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--263
+Underfull \hbox (badness 10000) in paragraph at lines 307--310
 \T1/cmtt/m/n/10 https : / / wazniak . mimuw . edu . pl / index . php ? title = 
 Uk % C5 % 82ady _
  []
 
 
-Underfull \hbox (badness 7631) in paragraph at lines 265--268
+Underfull \hbox (badness 7631) in paragraph at lines 312--315
 []\T1/cmr/m/it/10 Analog-to-digital co-nver-ter\T1/cmr/m/n/10 , Wi-ki-pe-dia, d
 o-st¶p on-line: $\T1/cmtt/m/n/10 https : / / en .
  []
 
 
-Underfull \hbox (badness 7397) in paragraph at lines 270--273
+
+[10]
+Underfull \hbox (badness 7397) in paragraph at lines 317--320
 []\T1/cmr/m/it/10 Digital-to-analog co-nver-ter\T1/cmr/m/n/10 , Wi-ki-pe-dia, d
 o-st¶p on-line: $\T1/cmtt/m/n/10 https : / / en .
  []
 
-
-
-[8]
-<protokol.PNG, id=52, 377.61075pt x 493.845pt>
+<protokol.PNG, id=58, 377.61075pt x 493.845pt>
 File: protokol.PNG Graphic file (type png)
 <use protokol.PNG>
-Package pdftex.def Info: protokol.PNG  used on input line 281.
+Package pdftex.def Info: protokol.PNG  used on input line 326.
 (pdftex.def)             Requested size: 276.00105pt x 360.97104pt.
 
 
-[9 <./protokol.PNG>] (MSCKubajewskiMatusiewiczOr≈Çowski.aux)
+[11 <./protokol.PNG>] (MSCKubajewskiMatusiewiczOr≈Çowski.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
@@ -968,7 +1027,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  27006 strings out of 468080
  682146 string characters out of 5425771
- 1258686 words of memory out of 5000000
+ 1259686 words of memory out of 5000000
  55254 multiletter control sequences out of 15000+600000
  635665 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -988,10 +1047,10 @@ bam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
 Users/kubam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.p
 fb><C:/Users/kubam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb>
-Output written on MSCKubajewskiMatusiewiczOr≈Çowski.pdf (9 pages, 1197111 bytes
-).
+Output written on MSCKubajewskiMatusiewiczOr≈Çowski.pdf (11 pages, 1210776 byte
+s).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
+ 359 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
